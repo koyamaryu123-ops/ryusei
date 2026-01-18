@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYUSEI KOYAMA | THE CORE</title>
+    <title>RYUKI KOYAMA | THE CORE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,99 +11,116 @@
 </head>
 <body>
 
-    <canvas id="particle-canvas"></canvas>
+    <canvas id="world"></canvas>
 
     <header>
-        <div class="logo">RK.<span class="highlight">DEV</span></div>
-        <div class="lang">JP / EN</div>
+        <div class="logo">RK.<span class="neon-green">DEV</span></div>
+        <div class="status">SYSTEM: ONLINE</div>
     </header>
 
     <nav class="side-nav">
         <ul>
-            <li><a href="#top" class="active">TOP</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#identity">IDENTITY</a></li>
             <li><a href="#works">WORKS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="top" class="hero">
-            <div class="hero-content fade-in">
-                <h1 class="main-title">CLARIFY<br>THE VISION</h1>
-                <p class="sub-title">より深く、世界（データ）と物語（フィクション）をハックする。</p>
+        <section id="top" class="hero-container">
+            <div class="hero-text" id="hero-text">
+                <p class="hero-sub">WASEDA UNIV. / CREATOR</p>
+                <h1 class="hero-title">CLARIFY<br><span class="outline">THE CORE</span></h1>
+                <p class="hero-msg">真実（データ）を暴き、虚構（物語）を構築する。</p>
             </div>
+            <div class="scroll-prompt">SCROLL TO DIVE</div>
         </section>
 
-        <section id="about" class="content-section">
-            <div class="container fade-in">
-                <h2 class="section-head">CORE IDENTITY</h2>
-                <div class="text-block">
-                    <p class="highlight-text">Ryuki Koyama / Waseda Univ.</p>
+        <div class="content-wrapper">
+            
+            <section id="identity" class="section-block">
+                <div class="block-header">
+                    <span class="num">01</span>
+                    <h2>IDENTITY</h2>
+                </div>
+                <div class="glass-panel fade-up">
+                    <h3>Ryuki Koyama</h3>
+                    <p class="role">Data Scientist & Novelist</p>
                     <p class="desc">
-                        「真実」を見抜くデータ解析と、「虚構」を紡ぐストーリーテリング。<br>
-                        相反する二つのコアを融合させ、予測不能な未来を実装するエンジニア。<br>
-                        暗号資産（Crypto）のハイリスクな海を泳ぎ、未踏の物語を描く。
+                        早稲田大学 人間科学部。<br>
+                        論理的な「データ解析」と、感性的な「ダークファンタジー執筆」。<br>
+                        さらにハイリスクな暗号資産市場での勝負勘を持つ、ENFP型クリエイター。<br>
+                        相反する領域を横断し、予測不能な解を導き出す。
                     </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="works" class="content-section">
-            <div class="container">
-                <h2 class="section-head">PROJECTS</h2>
-                <div class="works-grid">
-                    <div class="work-item fade-in">
-                        <div class="work-num">01</div>
-                        <div class="work-info">
-                            <h3>High-Risk Finance</h3>
-                            <p>Crypto Meme Coin Analysis & Strategy</p>
-                            <div class="line"></div>
+                    <div class="stats-bar">
+                        <div class="bar-item">
+                            <span>Logic (Python)</span>
+                            <div class="progress"><div class="fill green" style="width: 90%"></div></div>
                         </div>
-                    </div>
-                    <div class="work-item fade-in">
-                        <div class="work-num">02</div>
-                        <div class="work-info">
-                            <h3>Dark Fantasy Novel</h3>
-                            <p>World Building / Immersive Storytelling</p>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                    <div class="work-item fade-in">
-                        <div class="work-num">03</div>
-                        <div class="work-info">
-                            <h3>Data Science</h3>
-                            <p>Multivariate Analysis with Python (PCA)</p>
-                            <div class="line"></div>
+                        <div class="bar-item">
+                            <span>Creative (Writing)</span>
+                            <div class="progress"><div class="fill pink" style="width: 95%"></div></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact" class="content-section footer-section">
-            <div class="container fade-in">
-                <h2 class="section-head">CONNECT</h2>
-                <p class="contact-text">そのアイデアを、深海から引き上げる。</p>
-                <a href="mailto:example@gmail.com" class="btn-neon">SEND MESSAGE</a>
-            </div>
-        </section>
+            <section id="works" class="section-block">
+                <div class="block-header">
+                    <span class="num">02</span>
+                    <h2>WORKS</h2>
+                </div>
+                
+                <div class="works-list">
+                    <div class="work-row fade-up">
+                        <div class="w-cat neon-green">FINANCE</div>
+                        <div class="w-content">
+                            <h3>Crypto Strategy</h3>
+                            <p>ミームコイン市場における高ボラティリティ投資戦略の構築と運用。</p>
+                        </div>
+                        <div class="w-arrow">→</div>
+                    </div>
+                    <div class="work-row fade-up">
+                        <div class="w-cat neon-pink">NOVEL</div>
+                        <div class="w-content">
+                            <h3>Dark Fantasy World</h3>
+                            <p>緻密な設定資料とプロット制作。没入型Web小説の執筆。</p>
+                        </div>
+                        <div class="w-arrow">→</div>
+                    </div>
+                    <div class="work-row fade-up">
+                        <div class="w-cat neon-blue">DATA</div>
+                        <div class="w-content">
+                            <h3>Multivariate Analysis</h3>
+                            <p>Python/Pandasを用いた主成分分析によるデータの可視化。</p>
+                        </div>
+                        <div class="w-arrow">→</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <h2>CONTACT ME</h2>
+                <a href="mailto:example@gmail.com" class="btn-glitch">INITIALIZE</a>
+            </section>
+
+        </div>
     </main>
 
     <script>
-        // === 3Dパーティクル球体アニメーション ===
-        const canvas = document.getElementById('particle-canvas');
+        // === 1. 3Dパーティクル & スクロール連動 ===
+        const canvas = document.getElementById('world');
         const ctx = canvas.getContext('2d');
-
         let width, height;
         let particles = [];
         
         // 設定
-        const particleCount = 600; // 粒子の数
-        const sphereRadius = 250; // 球の半径
-        const rotationSpeed = 0.003; // 回転速度
+        const particleCount = 400;
+        let sphereRadius = 300; // 初期の球の大きさ
 
-        // リサイズ処理
+        // スクロール値
+        let scrollY = 0;
+
         function resize() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
@@ -111,100 +128,108 @@
         window.addEventListener('resize', resize);
         resize();
 
-        // パーティクルクラス
+        // 粒子クラス
         class Particle {
             constructor() {
-                // 球面上のランダムな点を生成
+                this.reset();
+            }
+            reset() {
                 const theta = Math.random() * Math.PI * 2;
                 const phi = Math.acos((Math.random() * 2) - 1);
-                
-                this.x = sphereRadius * Math.sin(phi) * Math.cos(theta);
-                this.y = sphereRadius * Math.sin(phi) * Math.sin(theta);
-                this.z = sphereRadius * Math.cos(phi);
-                
-                this.size = Math.random() * 2 + 1; // 粒子の大きさ
+                this.baseX = sphereRadius * Math.sin(phi) * Math.cos(theta);
+                this.baseY = sphereRadius * Math.sin(phi) * Math.sin(theta);
+                this.baseZ = sphereRadius * Math.cos(phi);
+                this.x = this.baseX;
+                this.y = this.baseY;
+                this.z = this.baseZ;
+                this.size = Math.random() * 1.5 + 0.5;
             }
-
-            rotate(angleY, angleX) {
-                // Y軸回転
-                let cos = Math.cos(angleY);
-                let sin = Math.sin(angleY);
-                let x = this.x * cos - this.z * sin;
-                let z = this.z * cos + this.x * sin;
-                this.x = x;
-                this.z = z;
-
-                // X軸回転
-                cos = Math.cos(angleX);
-                sin = Math.sin(angleX);
-                let y = this.y * cos - this.z * sin;
-                z = this.z * cos + this.y * sin;
-                this.y = y;
-                this.z = z;
+            rotate(angle) {
+                // 自動回転 + スクロールによる「広がり」効果
+                // スクロールするとZ軸手前に爆発的に広がる
+                const explosion = scrollY * 2; 
+                
+                const cos = Math.cos(angle);
+                const sin = Math.sin(angle);
+                
+                // 回転計算
+                let x = this.baseX * cos - this.baseZ * sin;
+                let z = this.baseZ * cos + this.baseX * sin;
+                
+                // スクロール影響（手前に迫ってくる）
+                this.x = x * (1 + scrollY * 0.002);
+                this.y = this.baseY * (1 + scrollY * 0.002);
+                this.z = z + explosion; 
             }
+            draw(ctx) {
+                // 遠近法
+                const fov = 400;
+                const scale = fov / (fov + this.z); 
+                if (scale < 0) return; // カメラより後ろは描画しない
 
-            draw(ctx, centerW, centerH) {
-                // 遠近感の計算
-                const scale = 400 / (400 + this.z); 
-                const alpha = (this.z + sphereRadius) / (2 * sphereRadius); // 奥にあるものは薄く
-
-                const px = this.x * scale + centerW;
-                const py = this.y * scale + centerH;
-
-                // 色の決定（X座標に基づいてグラデーション：左が黄緑、右がピンク）
-                // 画像の色味：Yellow(#ccff00) <-> Pink(#ff0066)
-                // xは -radius から +radius
-                const colorRatio = (this.x + sphereRadius) / (sphereRadius * 2);
+                const px = this.x * scale + width / 2;
+                const py = this.y * scale + height / 2;
                 
-                // HSLで色相を変化させる
-                // 黄色(60) -> マゼンタ(300) の範囲だと綺麗
-                // ここでは単純にRGB補間で画像の色味を再現
+                // 色の変化（黄色〜ピンク）
+                // 画面左側ほど黄色、右側ほどピンク
+                const ratio = (px / width);
+                const r = Math.floor(204 + (255 - 204) * ratio); // Yellow -> Pink R
+                const g = Math.floor(255 * (1 - ratio));         // Yellow -> Pink G
+                const b = Math.floor(100 * ratio);               // Yellow -> Pink B
                 
-                // 黄緑 (204, 255, 0)
-                // ピンク (255, 0, 102)
-                const r = Math.floor(204 + (255 - 204) * colorRatio);
-                const g = Math.floor(255 + (0 - 255) * colorRatio);
-                const b = Math.floor(0 + (102 - 0) * colorRatio);
-
-                ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+                ctx.fillStyle = `rgba(${r},${g},${b}, ${Math.min(1, scale)})`;
                 ctx.beginPath();
                 ctx.arc(px, py, this.size * scale, 0, Math.PI * 2);
                 ctx.fill();
             }
         }
 
-        // 初期化
-        for(let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
-        }
+        for(let i=0; i<particleCount; i++) particles.push(new Particle());
 
-        // アニメーションループ
+        // ループ
+        let angle = 0;
         function animate() {
-            ctx.fillStyle = '#000000'; // 背景色（黒）
+            ctx.fillStyle = '#050505';
             ctx.fillRect(0, 0, width, height);
-
-            const centerX = width / 2;
-            const centerY = height / 2;
-
+            
+            angle += 0.002;
+            
             particles.forEach(p => {
-                p.rotate(rotationSpeed, rotationSpeed * 0.5);
-                p.draw(ctx, centerX, centerY);
+                p.rotate(angle);
+                p.draw(ctx);
             });
-
             requestAnimationFrame(animate);
         }
         animate();
 
-        // スクロール時のフェードイン
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        // === 2. 「ぐっ」となるスクロールエフェクト制御 ===
+        const heroText = document.getElementById('hero-text');
+        
+        window.addEventListener('scroll', () => {
+            scrollY = window.scrollY;
+            
+            // ヒーローテキストのズーム処理
+            // スクロールするほど scale が大きくなり、opacity が下がる
+            const zoom = 1 + scrollY * 0.005; 
+            const opacity = 1 - scrollY * 0.0025;
+            
+            if(opacity > 0) {
+                heroText.style.transform = `scale(${zoom})`;
+                heroText.style.opacity = opacity;
+                heroText.style.display = 'block';
+            } else {
+                heroText.style.display = 'none'; // 見えなくなったら消す（負荷軽減）
+            }
+
+            // コンテンツのフェードイン
+            document.querySelectorAll('.fade-up').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if(rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
                 }
             });
-        }, {threshold: 0.1});
+        });
 
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
