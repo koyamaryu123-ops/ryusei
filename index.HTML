@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cursor-blur"></div>
+
+    <nav>
+        <div class="logo">PORTFOLIO.</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1 class="glitch-text" data-text="CREATIVE VISION">CREATIVE VISION</h1>
+            <p>常識を覆す、デジタル体験を構築する。</p>
+            <a href="#works" class="btn-primary">View My Work</a>
+        </section>
+
+        <section id="works" class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Project Alpha</h3>
+                    <p>AIを活用した次世代のデータ解析プラットフォーム。直感的なUIと高速な処理を実現。</p>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Neon Verse</h3>
+                    <p>WebGLを用いた3D空間Webサイト。没入感のあるブランド体験を提供。</p>
+                    <div class="tags">
+                        <span>Three.js</span>
+                        <span>WebGL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Smart City App</h3>
+                    <p>都市のエネルギー消費をリアルタイムで可視化するモバイルアプリケーション。</p>
+                    <div class="tags">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Crypto Dashboard</h3>
+                    <p>暗号資産のトレンドを予測し、ポートフォリオを自動管理するダッシュボード。</p>
+                    <div class="tags">
+                        <span>Vue.js</span>
+                        <span>D3.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Let's Create Together</h2>
+            <p>面白いプロジェクトの相談をお待ちしています。</p>
+            <a href="mailto:example@email.com" class="btn-secondary">Contact Me</a>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("works").onmousemove = e => {
+            for(const card of document.getElementsByClassName("card")) {
+                const rect = card.getBoundingClientRect(),
+                      x = e.clientX - rect.left,
+                      y = e.clientY - rect.top;
+
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+            };
+        }
+
+        // 背景のカーソル追従
+        const cursor = document.getElementById("cursor-blur");
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+    </script>
+</body>
+</html>
