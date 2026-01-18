@@ -176,3 +176,59 @@ a.work-row {
     font-weight: 700;
     opacity: 0.9;
 }
+
+/* === MY FAV セクションのスタイル (追記) === */
+
+.fav-grid {
+    display: grid;
+    /* 画面幅に合わせて自動で列数を調整（スマホ1列、PC3列など） */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fav-item {
+    position: relative;
+    height: 250px; /* 画像の高さ */
+    border-radius: 8px;
+    overflow: hidden; /* 画像が枠からはみ出ないように */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/* 画像の設定 */
+.fav-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 枠いっぱいにトリミング */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    filter: grayscale(80%); /* 最初は少しモノクロっぽくクールに */
+}
+
+/* ホバー時の動き */
+.fav-item:hover img {
+    transform: scale(1.1); /* 拡大 */
+    filter: grayscale(0%); /* カラーに戻る */
+}
+
+/* 画像の上の文字オーバーレイ */
+.fav-item .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 暗いカバー */
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; /* 最初は隠す */
+    transition: 0.3s;
+}
+
+.fav-item:hover .overlay {
+    opacity: 1; /* ホバーで表示 */
+}
+
+.fav-item .overlay span {
+    color: var(--neon-green);
+    font-family: var(--font-main);
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 1px solid var(--neon-green);
+    padding: 10px 20px;
+}
