@@ -3,148 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryuki Koyama | Portfolio</title>
+    <title>RYUKI KOYAMA | THE ARCHITECT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;600&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="cyber-grid"></div>
-    <div class="glow-overlay"></div>
+    <div id="world">
+        
+        <div class="particles" id="particles"></div>
 
-    <nav>
-        <div class="logo">RK.<span>DEV</span></div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#works">Works</a></li>
-        </ul>
-    </nav>
+        <header>
+            <div class="logo">RK.<span class="blink">exe</span></div>
+            <nav>
+                <a href="#profile">ID_CARD</a>
+                <a href="#skills">WEAPONS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
 
-    <main>
-        <section class="hero">
+        <section class="layer hero" data-speed="0.2">
             <div class="hero-content">
-                <p class="subtitle">Waseda Univ. Student / Creator</p>
-                <h1 class="glitch" data-text="RYUKI KOYAMA">RYUKI KOYAMA</h1>
-                <p class="description">
-                    早稲田大学 人間科学部。<br>
-                    論理と感性を融合させる、ENFP型クリエイター。
+                <p class="subtitle">Waseda Univ. / Human Sciences</p>
+                <h1 class="glitch-title" data-text="RYUKI KOYAMA">RYUKI KOYAMA</h1>
+                <p class="tagline">真実と虚構をハックする、<br>ENFP型クリエイティブ・モンスター。</p>
+                <div class="scroll-indicator">SCROLL TO DIVE</div>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            
+            <section id="profile" class="glass-section reveal">
+                <div class="section-header">
+                    <h2>IDENTITY</h2>
+                    <div class="line-deco"></div>
+                </div>
+                <div class="profile-card-3d">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>PLAYER: RYUKI</h3>
+                            <p class="univ">早稲田大学 人間科学部 2年</p>
+                            <div class="stats">
+                                <div class="stat-box">
+                                    <span>INT</span>
+                                    <div class="bar" style="width: 80%"></div>
+                                </div>
+                                <div class="stat-box">
+                                    <span>CHR (ENFP)</span>
+                                    <div class="bar" style="width: 95%"></div>
+                                </div>
+                                <div class="stat-box">
+                                    <span>LUCK</span>
+                                    <div class="bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="bio-text">
+                    自信こそが最強の武器。<br>
+                    データ解析という「現実」と、ダークファンタジーという「嘘」の物語。<br>
+                    その両極を支配し、予測不能な未来を構築する。
                 </p>
-                <div class="hero-btns">
-                    <a href="#about" class="btn-cyan">View Profile</a>
-                    <a href="#contact" class="btn-pink">Contact Me</a>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="about" class="section-padding">
-            <h2 class="section-title">ABOUT ME <span class="line"></span></h2>
-            <div class="profile-grid">
-                <div class="glass-panel">
-                    <h3>Basic Info</h3>
-                    <ul class="info-list">
-                        <li><span>Name:</span> 小山 立輝 (Ryuki Koyama)</li>
-                        <li><span>Univ:</span> 早稲田大学 人間科学部 2年</li>
-                        <li><span>MBTI:</span> ENFP (広報運動家)</li>
-                        <li><span>Location:</span> Tokyo, Shinjuku</li>
-                    </ul>
+            <section id="skills" class="reveal">
+                <div class="section-header">
+                    <h2>PROJECTS</h2>
+                    <div class="line-deco pink"></div>
                 </div>
-                <div class="glass-panel">
-                    <h3>Passions</h3>
-                    <p>
-                        重厚な世界観を持つダークファンタジーの創作や、Web小説（男主人公・ハイファンタジー）の分析に没頭。<br>
-                        また、暗号資産（Crypto）市場のトレンド分析を行い、ハイリスク・ハイリターンな領域での勝負勘を養っています。
-                    </p>
-                </div>
-            </div>
-        </section>
+                
+                <div class="cards-grid">
+                    <div class="holo-card">
+                        <div class="overlay"></div>
+                        <h3>High-Risk Finance</h3>
+                        <p class="sub">Crypto / Meme Coins</p>
+                        <p class="desc">瞬間の判断で勝機を掴む。暗号資産市場のボラティリティを乗りこなす投資戦略と分析。</p>
+                        <ul class="tech-list">
+                            <li>Market Analysis</li>
+                            <li>Risk Taking</li>
+                        </ul>
+                    </div>
 
-        <section id="history" class="section-padding">
-            <h2 class="section-title">HISTORY <span class="line pink"></span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="date">2024.04</div>
-                    <div class="content">
-                        <h3>早稲田大学 入学</h3>
-                        <p>人間科学部にて、人間環境やデータ科学の基礎を学び始める。</p>
+                    <div class="holo-card">
+                        <div class="overlay"></div>
+                        <h3>Dark Fantasy</h3>
+                        <p class="sub">World Building / Writing</p>
+                        <p class="desc">重厚な設定と緻密なプロット。読者を「嘘」の世界に引きずり込む没入型エンターテインメントの創造。</p>
+                        <ul class="tech-list">
+                            <li>Storytelling</li>
+                            <li>Lore Design</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="date">2025.12</div>
-                    <div class="content">
-                        <h3>データ解析 & 創作活動</h3>
-                        <p>大学課題での主成分分析(PCA)の実装に加え、独自の創作活動における世界観構築を本格化。</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="date">2026.01</div>
-                    <div class="content">
-                        <h3>就職活動 & 新たな挑戦</h3>
-                        <p>IT・マーケティング領域を中心に、Infinity AgentやAsiroなどの企業へアプローチを開始。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="works" class="section-padding">
-            <h2 class="section-title">WORKS <span class="line"></span></h2>
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>Data Analysis</h3>
-                        <p>CSVデータを用いた主成分分析（PCA）による多変量解析プロジェクト。</p>
-                        <div class="tags">
-                            <span class="tag-cyan">Python</span>
-                            <span class="tag-cyan">Pandas</span>
-                        </div>
+                    <div class="holo-card">
+                        <div class="overlay"></div>
+                        <h3>Data Science</h3>
+                        <p class="sub">Python / PCA</p>
+                        <p class="desc">早稲田大学での学び。主成分分析を用いた多変量データの可視化と論理的アプローチ。</p>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>World Building</h3>
-                        <p>独自設定に基づくダークファンタジー小説の設定資料集とプロット構築。</p>
-                        <div class="tags">
-                            <span class="tag-pink">Writing</span>
-                            <span class="tag-pink">Storytelling</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>Crypto Portfolio</h3>
-                        <p>ミームコインを中心としたハイボラティリティ市場における投資分析。</p>
-                        <div class="tags">
-                            <span class="tag-cyan">Finance</span>
-                            <span class="tag-cyan">Research</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact" class="footer-section">
-            <h2>Let's Connect</h2>
-            <p>未来の話をしましょう。</p>
-            <a href="mailto:example@email.com" class="btn-cyan">Send Email</a>
-        </section>
-    </main>
+            <section id="contact" class="footer reveal">
+                <h2>ARE YOU READY?</h2>
+                <p>面白い未来の話なら、いつでも。</p>
+                <a href="mailto:example@gmail.com" class="btn-glowing">INITIALIZE CONTACT</a>
+            </section>
+
+        </div>
+    </div>
 
     <script>
-        // マウスストーカー効果（カード用）
-        document.getElementById("works").onmousemove = e => {
-            for(const card of document.getElementsByClassName("card")) {
-                const rect = card.getBoundingClientRect(),
-                      x = e.clientX - rect.left,
-                      y = e.clientY - rect.top;
-                card.style.setProperty("--mouse-x", `${x}px`);
-                card.style.setProperty("--mouse-y", `${y}px`);
-            };
-        }
+        // === 3Dパララックス & 演出用スクリプト ===
+        
+        // 1. スクロールに応じた奥行き移動
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const hero = document.querySelector('.hero');
+            const particles = document.getElementById('particles');
+            
+            // ヒーローセクションを奥に飛ばす＆薄くする
+            hero.style.transform = `translateZ(-${scrolled * 0.5}px) scale(${1 + scrolled * 0.0005})`;
+            hero.style.opacity = 1 - scrolled * 0.002;
+
+            // 背景パーティクルを逆方向に動かしてスピード感を出す
+            particles.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+
+        // 2. 要素が画面に入ったらふわっと浮き出る (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // 3. マウスストーカー（カードの光）
+        document.addEventListener('mousemove', (e) => {
+            document.querySelectorAll('.holo-card').forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+            });
+        });
     </script>
 </body>
 </html>
