@@ -3,141 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYUKI KOYAMA | THE ARCHITECT</title>
+    <title>RYUKI KOYAMA | Official Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div id="world">
-        
-        <div class="particles" id="particles"></div>
+    <div id="sky-background"></div>
+    
+    <div class="clouds-container">
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+    </div>
 
-        <header>
-            <div class="logo">RK.<span class="blink">exe</span></div>
-            <nav>
-                <a href="#profile">ID_CARD</a>
-                <a href="#skills">WEAPONS</a>
-                <a href="#contact">CONTACT</a>
-            </nav>
-        </header>
+    <nav>
+        <div class="logo">Ryuki.K</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section class="layer hero" data-speed="0.2">
-            <div class="hero-content">
-                <p class="subtitle">Waseda Univ. / Human Sciences</p>
-                <h1 class="glitch-title" data-text="RYUKI KOYAMA">RYUKI KOYAMA</h1>
-                <p class="tagline">真実と虚構をハックする、<br>ENFP型クリエイティブ・モンスター。</p>
-                <div class="scroll-indicator">SCROLL TO DIVE</div>
+    <main>
+        <section class="hero">
+            <div class="hero-text-wrapper">
+                <p class="fade-in-up delay-1">Waseda University</p>
+                <h1 class="fade-in-up delay-2">BEYOND THE <br>LOGIC & FICTION</h1>
+                <p class="sub-text fade-in-up delay-3">
+                    データと物語を操り、未踏の景色を描き出す。<br>
+                    小山 立輝 ポートフォリオ
+                </p>
+                <div class="scroll-line"></div>
             </div>
         </section>
 
-        <div class="content-wrapper">
-            
-            <section id="profile" class="glass-section reveal">
-                <div class="section-header">
-                    <h2>IDENTITY</h2>
-                    <div class="line-deco"></div>
-                </div>
-                <div class="profile-card-3d">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <h3>PLAYER: RYUKI</h3>
-                            <p class="univ">早稲田大学 人間科学部 2年</p>
-                            <div class="stats">
-                                <div class="stat-box">
-                                    <span>INT</span>
-                                    <div class="bar" style="width: 80%"></div>
-                                </div>
-                                <div class="stat-box">
-                                    <span>CHR (ENFP)</span>
-                                    <div class="bar" style="width: 95%"></div>
-                                </div>
-                                <div class="stat-box">
-                                    <span>LUCK</span>
-                                    <div class="bar" style="width: 90%"></div>
-                                </div>
-                            </div>
+        <section id="about" class="content-section">
+            <div class="glass-card scroll-reveal">
+                <h2 class="section-title">Who I Am</h2>
+                <div class="profile-layout">
+                    <div class="profile-info">
+                        <h3>Ryuki Koyama</h3>
+                        <p class="university">早稲田大学 人間科学部 2年</p>
+                        <p class="bio">
+                            論理的なデータ解析と、想像力を駆使した世界観構築。<br>
+                            相反する二つの領域を行き来し、新しい価値を創造することに情熱を注いでいます。<br>
+                            大胆な仮説と緻密な検証で、まだ見ぬ正解を導き出します。
+                        </p>
+                    </div>
+                    <div class="stats-minimal">
+                        <div class="stat-item">
+                            <span class="num">01</span>
+                            <span class="label">Data Science</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="num">02</span>
+                            <span class="label">Creative Writing</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="num">03</span>
+                            <span class="label">Investment</span>
                         </div>
                     </div>
                 </div>
-                <p class="bio-text">
-                    自信こそが最強の武器。<br>
-                    データ解析という「現実」と、ダークファンタジーという「嘘」の物語。<br>
-                    その両極を支配し、予測不能な未来を構築する。
-                </p>
-            </section>
+            </div>
+        </section>
 
-            <section id="skills" class="reveal">
-                <div class="section-header">
-                    <h2>PROJECTS</h2>
-                    <div class="line-deco pink"></div>
-                </div>
+        <section id="works" class="content-section">
+            <h2 class="section-title white-shadow">Selected Works</h2>
+            <div class="works-grid">
                 
-                <div class="cards-grid">
-                    <div class="holo-card">
-                        <div class="overlay"></div>
-                        <h3>High-Risk Finance</h3>
-                        <p class="sub">Crypto / Meme Coins</p>
-                        <p class="desc">瞬間の判断で勝機を掴む。暗号資産市場のボラティリティを乗りこなす投資戦略と分析。</p>
-                        <ul class="tech-list">
-                            <li>Market Analysis</li>
-                            <li>Risk Taking</li>
-                        </ul>
-                    </div>
-
-                    <div class="holo-card">
-                        <div class="overlay"></div>
-                        <h3>Dark Fantasy</h3>
-                        <p class="sub">World Building / Writing</p>
-                        <p class="desc">重厚な設定と緻密なプロット。読者を「嘘」の世界に引きずり込む没入型エンターテインメントの創造。</p>
-                        <ul class="tech-list">
-                            <li>Storytelling</li>
-                            <li>Lore Design</li>
-                        </ul>
-                    </div>
-
-                    <div class="holo-card">
-                        <div class="overlay"></div>
-                        <h3>Data Science</h3>
-                        <p class="sub">Python / PCA</p>
-                        <p class="desc">早稲田大学での学び。主成分分析を用いた多変量データの可視化と論理的アプローチ。</p>
-                        <ul class="tech-list">
-                            <li>Python</li>
-                            <li>Pandas</li>
-                        </ul>
+                <div class="work-card scroll-reveal">
+                    <div class="card-image gradient-1"></div>
+                    <div class="card-details">
+                        <span class="category">Investment Analysis</span>
+                        <h3>Crypto Portfolio</h3>
+                        <p>ミームコイン市場の変動パターンを分析。リスクを見極め、最大の利益を狙う投資戦略の構築。</p>
                     </div>
                 </div>
-            </section>
 
-            <section id="contact" class="footer reveal">
-                <h2>ARE YOU READY?</h2>
-                <p>面白い未来の話なら、いつでも。</p>
-                <a href="mailto:example@gmail.com" class="btn-glowing">INITIALIZE CONTACT</a>
-            </section>
+                <div class="work-card scroll-reveal">
+                    <div class="card-image gradient-2"></div>
+                    <div class="card-details">
+                        <span class="category">Creative Writing</span>
+                        <h3>World Building</h3>
+                        <p>重厚な設定とロマンスを織り交ぜた小説執筆。読者を魅了する没入型エンターテインメント。</p>
+                    </div>
+                </div>
 
-        </div>
-    </div>
+                <div class="work-card scroll-reveal">
+                    <div class="card-image gradient-3"></div>
+                    <div class="card-details">
+                        <span class="category">Data Science</span>
+                        <h3>Multivariate Analysis</h3>
+                        <p>Python/Pandasを用いた主成分分析。膨大なデータから「真実」を浮き彫りにする。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="content-section footer-section">
+            <div class="glass-card center-text scroll-reveal">
+                <h2>Let's Create the Future</h2>
+                <p>面白いプロジェクトやビジョンについて、語り合いましょう。</p>
+                <a href="mailto:example@gmail.com" class="btn-gold">Get in Touch</a>
+            </div>
+        </section>
+
+    </main>
 
     <script>
-        // === 3Dパララックス & 演出用スクリプト ===
+        // === スクロール演出 ===
         
-        // 1. スクロールに応じた奥行き移動
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const hero = document.querySelector('.hero');
-            const particles = document.getElementById('particles');
-            
-            // ヒーローセクションを奥に飛ばす＆薄くする
-            hero.style.transform = `translateZ(-${scrolled * 0.5}px) scale(${1 + scrolled * 0.0005})`;
-            hero.style.opacity = 1 - scrolled * 0.002;
-
-            // 背景パーティクルを逆方向に動かしてスピード感を出す
-            particles.style.transform = `translateY(${scrolled * 0.5}px)`;
-        });
-
-        // 2. 要素が画面に入ったらふわっと浮き出る (Intersection Observer)
+        // 1. スクロールで要素がふわっと浮き上がる
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -146,17 +128,24 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
 
-        // 3. マウスストーカー（カードの光）
-        document.addEventListener('mousemove', (e) => {
-            document.querySelectorAll('.holo-card').forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.setProperty('--x', `${x}px`);
-                card.style.setProperty('--y', `${y}px`);
-            });
+        // 2. パララックス（雲の動きと背景色の変化）
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const height = document.body.scrollHeight - window.innerHeight;
+            const percent = scrolled / height;
+
+            // 雲を動かす
+            document.querySelector('.c1').style.transform = `translateX(${scrolled * 0.2}px)`;
+            document.querySelector('.c2').style.transform = `translateX(-${scrolled * 0.1}px)`;
+
+            // 背景色を青空 -> 明るい白/ゴールドへ変遷させる
+            // CSS変数 --scroll-percent を更新してCSS側で色を変える手もあるが、
+            // ここではシンプルに背景要素の不透明度などをいじる
+            const sky = document.getElementById('sky-background');
+            // スクロールするほど少し色が濃くなる、あるいは夕焼けっぽくなる演出
+            // ここでは「より高い空へ」行くイメージで明るさを維持
         });
     </script>
 </body>
