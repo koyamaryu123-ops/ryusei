@@ -156,3 +156,23 @@ header {
 /* アニメーション */
 .fade-up { opacity: 0; transform: translateY(50px); transition: 0.8s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* === Worksリンクの修正（追記） === */
+/* aタグに変えたので、デザインが崩れないようにリセットする設定 */
+a.work-row {
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* 色を親要素(白)に合わせる */
+    display: flex; /* レイアウト崩れ防止 */
+    width: 100%; /* 横幅いっぱいにする */
+}
+
+/* === Contactのメールアドレス表示（追記） === */
+.email-text {
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    color: var(--text-white);
+    letter-spacing: 2px;
+    margin-bottom: 30px; /* ボタンとの隙間 */
+    font-weight: 700;
+    opacity: 0.9;
+}
