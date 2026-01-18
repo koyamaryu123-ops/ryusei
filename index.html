@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYUKI KOYAMA | Official Portfolio</title>
+    <title>RYUKI KOYAMA | Skyward Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div id="sky-background"></div>
-    
-    <div class="clouds-container">
-        <div class="cloud c1"></div>
-        <div class="cloud c2"></div>
-        <div class="cloud c3"></div>
+    <div class="fixed-bg"></div>
+
+    <div class="clouds-layer">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
     </div>
 
     <nav>
@@ -30,122 +29,112 @@
 
     <main>
         <section class="hero">
-            <div class="hero-text-wrapper">
-                <p class="fade-in-up delay-1">Waseda University</p>
-                <h1 class="fade-in-up delay-2">BEYOND THE <br>LOGIC & FICTION</h1>
-                <p class="sub-text fade-in-up delay-3">
-                    データと物語を操り、未踏の景色を描き出す。<br>
+            <div class="hero-content">
+                <p class="univ-name">Waseda University</p>
+                <h1>BEYOND THE<br>SKY LIMIT</h1>
+                <p class="sub-msg">
+                    論理と感性で、空の向こう側へ。<br>
                     小山 立輝 ポートフォリオ
                 </p>
-                <div class="scroll-line"></div>
             </div>
+            <div class="scroll-icon"></div>
         </section>
 
-        <section id="about" class="content-section">
-            <div class="glass-card scroll-reveal">
-                <h2 class="section-title">Who I Am</h2>
-                <div class="profile-layout">
-                    <div class="profile-info">
+        <section id="about" class="container">
+            <div class="glass-box fade-in">
+                <h2>Who I Am</h2>
+                <div class="about-flex">
+                    <div class="text-area">
                         <h3>Ryuki Koyama</h3>
-                        <p class="university">早稲田大学 人間科学部 2年</p>
-                        <p class="bio">
-                            論理的なデータ解析と、想像力を駆使した世界観構築。<br>
-                            相反する二つの領域を行き来し、新しい価値を創造することに情熱を注いでいます。<br>
-                            大胆な仮説と緻密な検証で、まだ見ぬ正解を導き出します。
+                        <p class="role">Data Scientist / Creator</p>
+                        <p class="desc">
+                            早稲田大学 人間科学部 2年。<br>
+                            「データ解析による真実の解明」と「創作による嘘の構築」。<br>
+                            この相反するスキルを武器に、誰も見たことのない景色を作ります。<br>
+                            ENFP（広報運動家）らしい爆発的な行動力で、投資から執筆まで幅広く活動中。
                         </p>
                     </div>
-                    <div class="stats-minimal">
-                        <div class="stat-item">
+                    <div class="stats-area">
+                        <div class="stat-row">
                             <span class="num">01</span>
-                            <span class="label">Data Science</span>
+                            <span class="cat">Analysis</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-row">
                             <span class="num">02</span>
-                            <span class="label">Creative Writing</span>
+                            <span class="cat">Fantasy</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-row">
                             <span class="num">03</span>
-                            <span class="label">Investment</span>
+                            <span class="cat">Finance</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="content-section">
-            <h2 class="section-title white-shadow">Selected Works</h2>
+        <section id="works" class="container">
+            <h2 class="section-head">Works</h2>
             <div class="works-grid">
-                
-                <div class="work-card scroll-reveal">
-                    <div class="card-image gradient-1"></div>
-                    <div class="card-details">
-                        <span class="category">Investment Analysis</span>
-                        <h3>Crypto Portfolio</h3>
-                        <p>ミームコイン市場の変動パターンを分析。リスクを見極め、最大の利益を狙う投資戦略の構築。</p>
+                <div class="work-card fade-in">
+                    <div class="card-thumb color-1"></div>
+                    <div class="card-body">
+                        <span class="tag">Investment</span>
+                        <h3>Crypto Strategy</h3>
+                        <p>ミームコイン市場のボラティリティを味方につける、ハイリスク・ハイリターンな投資分析。</p>
                     </div>
                 </div>
-
-                <div class="work-card scroll-reveal">
-                    <div class="card-image gradient-2"></div>
-                    <div class="card-details">
-                        <span class="category">Creative Writing</span>
-                        <h3>World Building</h3>
-                        <p>重厚な設定とロマンスを織り交ぜた小説執筆。読者を魅了する没入型エンターテインメント。</p>
+                <div class="work-card fade-in">
+                    <div class="card-thumb color-2"></div>
+                    <div class="card-body">
+                        <span class="tag">Writing</span>
+                        <h3>Dark Fantasy</h3>
+                        <p>緻密な世界観設定とロマンス。読者を没入させるWeb小説の執筆とプロット構築。</p>
                     </div>
                 </div>
-
-                <div class="work-card scroll-reveal">
-                    <div class="card-image gradient-3"></div>
-                    <div class="card-details">
-                        <span class="category">Data Science</span>
-                        <h3>Multivariate Analysis</h3>
-                        <p>Python/Pandasを用いた主成分分析。膨大なデータから「真実」を浮き彫りにする。</p>
+                <div class="work-card fade-in">
+                    <div class="card-thumb color-3"></div>
+                    <div class="card-body">
+                        <span class="tag">Data</span>
+                        <h3>Python Analysis</h3>
+                        <p>主成分分析(PCA)を用いた多変量データの可視化。複雑な情報をシンプルに紐解く。</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="contact" class="content-section footer-section">
-            <div class="glass-card center-text scroll-reveal">
-                <h2>Let's Create the Future</h2>
-                <p>面白いプロジェクトやビジョンについて、語り合いましょう。</p>
-                <a href="mailto:example@gmail.com" class="btn-gold">Get in Touch</a>
+        <section id="contact" class="container footer-margin">
+            <div class="glass-box center fade-in">
+                <h2>Contact</h2>
+                <p>面白い未来の話をしましょう。</p>
+                <a href="mailto:example@gmail.com" class="btn-main">Get in Touch</a>
             </div>
         </section>
-
     </main>
 
     <script>
-        // === スクロール演出 ===
-        
-        // 1. スクロールで要素がふわっと浮き上がる
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
+        // 安全なスクロールアニメーション
+        document.addEventListener("DOMContentLoaded", () => {
+            const targets = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            targets.forEach(target => observer.observe(target));
+
+            // パララックス（雲の動き）
+            window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                const cloud1 = document.querySelector('.cloud-1');
+                const cloud2 = document.querySelector('.cloud-2');
+                
+                if(cloud1) cloud1.style.transform = `translate(${scrollY * 0.2}px, ${scrollY * 0.05}px)`;
+                if(cloud2) cloud2.style.transform = `translate(-${scrollY * 0.1}px, ${scrollY * 0.02}px)`;
             });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-
-        // 2. パララックス（雲の動きと背景色の変化）
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const height = document.body.scrollHeight - window.innerHeight;
-            const percent = scrolled / height;
-
-            // 雲を動かす
-            document.querySelector('.c1').style.transform = `translateX(${scrolled * 0.2}px)`;
-            document.querySelector('.c2').style.transform = `translateX(-${scrolled * 0.1}px)`;
-
-            // 背景色を青空 -> 明るい白/ゴールドへ変遷させる
-            // CSS変数 --scroll-percent を更新してCSS側で色を変える手もあるが、
-            // ここではシンプルに背景要素の不透明度などをいじる
-            const sky = document.getElementById('sky-background');
-            // スクロールするほど少し色が濃くなる、あるいは夕焼けっぽくなる演出
-            // ここでは「より高い空へ」行くイメージで明るさを維持
         });
     </script>
 </body>
