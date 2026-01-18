@@ -229,18 +229,22 @@
 
         // ループ
         let angle = 0;
-        function animate() {
-            ctx.fillStyle = '#050505';
-            ctx.fillRect(0, 0, width, height);
-            
-            angle += 0.002;
-            
-            particles.forEach(p => {
-                p.rotate(angle);
-                p.draw(ctx);
-            });
-            requestAnimationFrame(animate);
-        }
+
+function animate() {
+    // 修正前: ctx.fillStyle = '#050505';
+    // 修正後: ここもCSSと同じ色にする！
+    ctx.fillStyle = '#18181b'; 
+    
+    ctx.fillRect(0, 0, width, height);
+    
+    angle += 0.002;
+    
+    particles.forEach(p => {
+        p.rotate(angle);
+        p.draw(ctx);
+    });
+    requestAnimationFrame(animate);
+}
         animate();
 
         // === 2. 「ぐっ」となるスクロールエフェクト制御 ===
